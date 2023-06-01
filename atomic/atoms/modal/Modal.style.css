@@ -48,3 +48,28 @@
 .modal-body {
   padding: 16px;
 }
+
+.modal-footer {
+  display: flex;
+  justify-content: end;
+  padding: 10px;
+}
+
+.modal-cancel {
+  background-color: #e0e0e0;
+  color: #333;
+  border: none;
+  padding: 8px 16px;
+  margin-right: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-submit {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}

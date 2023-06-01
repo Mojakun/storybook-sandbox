@@ -1,22 +1,32 @@
-import React, { PropsWithChildren } from "react";
+import React, { PropsWithChildren, useCallback } from "react";
 import "./Modal.style.css";
 
 type Props = Readonly<{
   isOpen: boolean;
   title: string;
   onClose: () => void;
-  children: React.ReactNode;
+  onSubmit: () => Promise<void> | void;
 }>;
 
 export function Modal({
   isOpen,
   title,
   onClose,
+  onSubmit,
   children,
 }: PropsWithChildren<Props>): JSX.Element {
   if (!isOpen) {
     return <></>;
   }
+
+  const handleConfirm = useCallback(async () => {
+    try {
+      await onSubmit();
+      onClose();
+    } catch (error) {
+      console.error("Submit error:", error);
+    }
+  }, [onSubmit, onClose]);
 
   return (
     <div className="modal">
@@ -29,6 +39,14 @@ export function Modal({
           </button>
         </div>
         <div className="modal-body">{children}</div>
+        <div className="modal-footer">
+          <button className="modal-cancel" onClick={onClose}>
+            キャンセル
+          </button>
+          <button className="modal-submit" onClick={handleConfirm}>
+            実行
+          </button>
+        </div>
       </div>
     </div>
   );
