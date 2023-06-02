@@ -10,7 +10,7 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "test": "jest --config=jest.config.js",
-    "test-storybook": "test-storybook"
+    "test-storybook": "test-storybook --coverage"
   },
   "dependencies": {
     "@types/node": "20.2.5",
@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "@storybook/addon-actions": "^7.0.18",
+    "@storybook/addon-coverage": "^0.0.8",
     "@storybook/addon-essentials": "^7.0.18",
     "@storybook/addon-interactions": "^7.0.18",
     "@storybook/addon-links": "^7.0.18",
