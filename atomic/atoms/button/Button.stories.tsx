@@ -1,11 +1,15 @@
 // Button.stories.tsx
 
 import { Meta, StoryObj } from "@storybook/react";
+import { userEvent, within } from "@storybook/testing-library";
 
 import { Button } from "./Button";
+import { action } from "@storybook/addon-actions";
+
+import { expect } from "@storybook/jest";
 
 const meta: Meta<typeof Button> = {
-  title: "Atoms/Button",
+  title: "atoms/Button",
   component: Button,
   argTypes: {
     children: { control: { type: "text" } },
@@ -46,10 +50,15 @@ export const Small: Story = {
   },
 };
 
-export const Interactive = () => (
-  <Button
-    size="medium"
-    mode="primary"
-    onClick={() => alert("Button clicked!")}
-  />
-);
+export const ButtonClick: Story = {
+  args: {
+    size: "small",
+    onClick: action("onClick"),
+  },
+  play: ({ args, canvasElement }) => {
+    const canvas = within(canvasElement);
+    const button = canvas.getByRole("button");
+    userEvent.click(button);
+    expect(args.onClick).toHaveBeenCalled();
+  },
+};
