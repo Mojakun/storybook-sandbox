@@ -29,7 +29,7 @@ export function Modal({
   }, [onSubmit, onClose]);
 
   return (
-    <div className="modal">
+    <div className="modal" role="dialog">
       <div className="modal-overlay" onClick={onClose} />
       <div className="modal-content">
         <div className="modal-header">
