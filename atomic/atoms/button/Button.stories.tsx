@@ -16,37 +16,37 @@ type ButtonProps = StoryFn<typeof Button>;
 
 const Template: ButtonProps = (args) => <Button {...args} />;
 
-export const Primary = Template.bind({});
-Primary.args = {
+export const PrimaryButton = Template.bind({});
+PrimaryButton.args = {
   mode: "primary",
 };
 
-export const Secondary = Template.bind({});
-Secondary.args = {
+export const SecondaryButton = Template.bind({});
+SecondaryButton.args = {
   mode: "secondary",
 };
 
-export const Large = Template.bind({});
-Large.args = {
+export const LargeButton = Template.bind({});
+LargeButton.args = {
   size: "large",
 };
 
-export const Medium = Template.bind({});
-Medium.args = {
+export const MediumButton = Template.bind({});
+MediumButton.args = {
   size: "medium",
 };
 
-export const Small = Template.bind({});
-Small.args = {
+export const SmallButton = Template.bind({});
+SmallButton.args = {
   size: "small",
 };
 
-export const ClickButtonStory: ButtonProps = Template.bind({});
-ClickButtonStory.args = {
+export const ClickButton: ButtonProps = Template.bind({});
+ClickButton.args = {
   onClick: action("onClick"),
 };
 
-ClickButtonStory.play = async ({ args, canvasElement }) => {
+ClickButton.play = async ({ args, canvasElement }) => {
   const canvas = within(canvasElement);
   const button = canvas.getByRole("button");
   userEvent.click(button);

@@ -3,16 +3,16 @@ import { composeStories } from "@storybook/react";
 import * as stories from "./Button.stories";
 import { fireEvent, userEvent } from "@storybook/testing-library";
 
-const { Primary, ClickButtonStory } = composeStories(stories);
+const { PrimaryButton, ClickButton } = composeStories(stories);
 
 const handleClick = jest.fn();
 test("renders primary button with overriden props", () => {
-  render(<Primary>Hello world</Primary>);
+  render(<PrimaryButton>Hello world</PrimaryButton>);
   const buttonElement = screen.getByText(/Hello world/i);
   expect(buttonElement).not.toBeNull();
 });
 test("calls onClick when button is clicked", () => {
-  render(<Primary onClick={handleClick} />);
+  render(<PrimaryButton onClick={handleClick} />);
 
   const buttonElement = screen.getByText(/Submit/i);
   fireEvent.click(buttonElement);
@@ -20,8 +20,8 @@ test("calls onClick when button is clicked", () => {
   expect(handleClick).toHaveBeenCalledTimes(1);
 });
 test("renders with play function", async () => {
-  const { container } = render(<ClickButtonStory />);
-  await ClickButtonStory.play({
+  const { container } = render(<ClickButton />);
+  await ClickButton.play({
     args: { onClick: handleClick },
     canvasElement: container,
   });
