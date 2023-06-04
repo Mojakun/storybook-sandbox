@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots atoms/Button Click Button 1`] = `
+<button
+  className="button button--medium button-primary"
+  onClick={[Function]}
+>
+  Submit
+</button>
+`;
+
+exports[`Storyshots atoms/Button Large Button 1`] = `
+<button
+  className="button button--large button-primary"
+>
+  Submit
+</button>
+`;
+
+exports[`Storyshots atoms/Button Medium Button 1`] = `
+<button
+  className="button button--medium button-primary"
+>
+  Submit
+</button>
+`;
+
+exports[`Storyshots atoms/Button Primary Button 1`] = `
+<button
+  className="button button--medium button-primary"
+>
+  Submit
+</button>
+`;
+
+exports[`Storyshots atoms/Button Secondary Button 1`] = `
+<button
+  className="button button--medium button-secondary"
+>
+  Submit
+</button>
+`;
+
+exports[`Storyshots atoms/Button Small Button 1`] = `
+<button
+  className="button button--small button-primary"
+>
+  Submit
+</button>
+`;
