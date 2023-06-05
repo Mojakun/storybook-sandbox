@@ -1,15 +1,15 @@
 @storybook/cli v7.0.18
 
-info => Cleaning outputDir: /var/folders/6b/8cxttrdx2zs_w3z35k4f1gpm0000gn/T/chromatic--34849-Czb9Zrhr2Uya
+info => Cleaning outputDir: /var/folders/6b/8cxttrdx2zs_w3z35k4f1gpm0000gn/T/chromatic--35970-2lpv5lWHlzAN
 info => Loading presets
 info Found existing addon "@storybook/addon-actions", skipping.
 info Found existing addon "@storybook/addon-actions", skipping.
 info => Building manager..
 WARN unable to find package.json for 
-info => Manager built (111 ms)
+info => Manager built (122 ms)
 info => Compiling preview..
 [addon-coverage] Adding istanbul plugin to babel config
-info => Copying static files: /Users/takechikazuya/Documents/git/storybook-sandbox/node_modules/@storybook/manager/static at /var/folders/6b/8cxttrdx2zs_w3z35k4f1gpm0000gn/T/chromatic--34849-Czb9Zrhr2Uya/sb-common-assets
+info => Copying static files: /Users/takechikazuya/Documents/git/storybook-sandbox/node_modules/@storybook/manager/static at /var/folders/6b/8cxttrdx2zs_w3z35k4f1gpm0000gn/T/chromatic--35970-2lpv5lWHlzAN/sb-common-assets
 WARN You (or an addon) are using the 'config' preset field. This has been replaced by 'previewAnnotations' and will be removed in 8.0
 info Addon-docs: using MDX2
 info => Using implicit CSS loaders
@@ -116,15 +116,15 @@ info => Using default Webpack5 setup
 <s> [webpack.Progress] 9% setup compilation
 <s> [webpack.Progress] 10% building
 <s> [webpack.Progress] 10% building 0/1 entries 0/0 dependencies 0/0 modules
-<s> [webpack.Progress] 19% building import loader ./node_modules/babel-loader/lib/index.js
-<s> [webpack.Progress] 19% building 0/1 entries 18/22 dependencies 3/18 modules
+<s> [webpack.Progress] 22% building import loader ./node_modules/babel-loader/lib/index.js
+<s> [webpack.Progress] 22% building 0/1 entries 13/22 dependencies 3/13 modules
 <s> [webpack.Progress] 29% building import loader ./node_modules/unplugin/dist/webpack/loaders/load.js
-<s> [webpack.Progress] 29% building 0/1 entries 45/83 dependencies 11/31 modules
+<s> [webpack.Progress] 29% building 0/1 entries 45/86 dependencies 11/31 modules
 <s> [webpack.Progress] 51% building import loader ./node_modules/style-loader/dist/cjs.js
 <s> [webpack.Progress] 51% building import loader ./node_modules/css-loader/dist/cjs.js
 <s> [webpack.Progress] 51% building import loader ./node_modules/postcss-loader/dist/cjs.js
-<s> [webpack.Progress] 51% building 0/1 entries 463/489 dependencies 149/199 modules
-<s> [webpack.Progress] 44% building 0/1 entries 800/838 dependencies 225/360 modules
+<s> [webpack.Progress] 51% building 0/1 entries 470/490 dependencies 154/203 modules
+<s> [webpack.Progress] 44% building 0/1 entries 900/946 dependencies 248/390 modules
 <s> [webpack.Progress] 65% building 1/1 entries 1829/1829 dependencies 800/800 modules
 <s> [webpack.Progress] 65% building
 <s> [webpack.Progress] 69% building finish
@@ -323,7 +323,7 @@ info => Using default Webpack5 setup
 <s> [webpack.Progress] 99% cache begin idle
 <s> [webpack.Progress] 100% 
 
-info => Preview built (8.99 s)
+info => Preview built (8.83 s)
 WARN asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
 WARN This can impact web performance.
 WARN Assets: 
@@ -343,4 +343,4 @@ WARN
 <s> [webpack.Progress] 99% cache shutdown
 <s> [webpack.Progress] 100% 
 
-info => Output directory: /var/folders/6b/8cxttrdx2zs_w3z35k4f1gpm0000gn/T/chromatic--34849-Czb9Zrhr2Uya
+info => Output directory: /var/folders/6b/8cxttrdx2zs_w3z35k4f1gpm0000gn/T/chromatic--35970-2lpv5lWHlzAN
